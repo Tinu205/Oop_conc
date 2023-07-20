@@ -23,7 +23,19 @@ bul = pet("snake")
 # print(bul.type)
 # print(bul.name)
 
-hel.add_tricks("Rollover")
+# hel.add_tricks("Rollover")
 
-print(hel.tricks)
-print(bul.tricks)
+# print(hel.tricks)
+# print(bul.tricks)
+
+class owner(pet):
+    def __init__(self, name,owner) -> None:
+        super().__init__(name)
+        self.owner = owner
+petty = owner("Daisy","Homie")
+
+petty.add_tricks("Bark")
+print(petty.owner)
+
+
+

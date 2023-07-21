@@ -32,10 +32,20 @@ class owner(pet):
     def __init__(self, name,owner) -> None:
         super().__init__(name)
         self.owner = owner
-petty = owner("Daisy","Homie")
+# petty = owner("Daisy","Homie")
 
-petty.add_tricks("Bark")
-print(petty.owner)
+# petty.add_tricks("Bark")
+# print(petty.owner)
 
+class sound(pet):
+    def __init__(self, name) -> None:
+        super().__init__(name)
+    def make_sound(self):
+        print("Woof")
+# kutty = sound("patti")
+# print(kutty.type)
+# kutty.make_sound()
+# print(isinstance(kutty,pet))
+# print(isinstance(kutty,sound))
 
 

@@ -78,3 +78,32 @@ print(paari.get())
 ## Associations 
 ## Aggrigations
 ## compotions """Creating a instance of a class inside another class"""
+## Associations is simply relating one class with other class
+
+class Student:
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
+        self.courses = []  # List to hold associated courses
+
+    def enroll(self, course):
+        self.courses.append(course)
+
+class Course:
+    def __init__(self, course_code, title):
+        self.course_code = course_code
+        self.title = title
+
+# Association example:
+student1 = Student("Alice", "S123")
+student2 = Student("Bob", "S456")
+
+course1 = Course("C101", "Mathematics")
+course2 = Course("C202", "History")
+
+# Enrolling students in courses
+student1.enroll(course1)
+for course in student1.courses:
+    print(f"- {course.title}")
+
+##Aggriggations

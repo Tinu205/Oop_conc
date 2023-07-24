@@ -107,3 +107,31 @@ for course in student1.courses:
     print(f"- {course.title}")
 
 ##Aggriggations
+## whole part of class contains methods of another class
+class Employee:
+    def __init__(self, name, emp_id):
+        self.name = name
+        self.emp_id = emp_id
+
+class Department:
+    def __init__(self, name):
+        self.name = name
+        self.employees = []  # List to hold associated Employee objects
+
+    def add_employee(self, employee):
+        self.employees.append(employee)
+
+# Aggregation example:
+employee1 = Employee("Alice", 101)
+employee2 = Employee("Bob", 102)
+
+department1 = Department("HR")
+department1.add_employee(employee1)
+department1.add_employee(employee2)
+
+department2 = Department("Engineering")
+department2.add_employee(employee1)
+
+print(f"{employee1.name} is part of the {department1.name} department.")
+print(f"{employee1.name} is also part of the {department2.name} department.")
+##

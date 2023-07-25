@@ -65,7 +65,7 @@ class person:
     def newage(self,newage):
         self.__age = newage
 paari = person("Paari",22)
-print(paari.get())
+# print(paari.get())
 
 #print(paari.__age) wont work because it's protected
 # print(paari.age)
@@ -77,7 +77,7 @@ print(paari.get())
 #### Class relaitonships ####
 ## Associations 
 ## Aggrigations
-## compotions """Creating a instance of a class inside another class"""
+## compotions 
 ## Associations is simply relating one class with other class
 
 class Student:
@@ -103,8 +103,8 @@ course2 = Course("C202", "History")
 
 # Enrolling students in courses
 student1.enroll(course1)
-for course in student1.courses:
-    print(f"- {course.title}")
+# for course in student1.courses:
+#     print(f"- {course.title}")
 
 ##Aggriggations
 ## whole part of class contains methods of another class
@@ -132,6 +132,25 @@ department1.add_employee(employee2)
 department2 = Department("Engineering")
 department2.add_employee(employee1)
 
-print(f"{employee1.name} is part of the {department1.name} department.")
-print(f"{employee1.name} is also part of the {department2.name} department.")
-##
+# print(f"{employee1.name} is part of the {department1.name} department.")
+# print(f"{employee1.name} is also part of the {department2.name} department.")
+
+### Static methods vs class methods
+## static method creates a method with out  input form the class or obj
+class sample:
+    @staticmethod
+    def num(n):
+        print(f"square:  {n*n}")
+# sample.num(4)
+##classmethods takes arguments from class and creates an object
+class mathoperations:
+
+    @classmethod
+    def from_list(cls, num_list):
+        obj = cls()
+        obj.numbers = num_list
+        return obj
+arr = [1,2,3,4]
+mathobj = mathoperations.from_list(arr)
+# print(mathobj.numbers)
+## Special methods

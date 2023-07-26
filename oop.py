@@ -154,3 +154,22 @@ arr = [1,2,3,4]
 mathobj = mathoperations.from_list(arr)
 # print(mathobj.numbers)
 ## Special methods
+'''
+__init__(self, ...): Constructor method that initializes the object when it is created.
+
+__str__(self): Returns a string representation of the object when str() function is called or when the object is printed using print().
+
+__repr__(self): Returns a string representation of the object for debugging purposes and when repr() function is called.
+
+__len__(self): Returns the length of the object when len() function is called.
+
+__add__(self, other): Performs addition when the + operator is used with two objects.
+
+__sub__(self, other): Performs subtraction when the - operator is used with two objects.
+
+__eq__(self, other): Compares objects for equality using the == operator.
+
+__lt__(self, other): Compares objects for less than using the < operator.
+
+__enter__(self), __exit__(self, exc_type, exc_value, traceback): Used for context management using the with statement
+'''

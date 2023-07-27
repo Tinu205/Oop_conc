@@ -173,3 +173,25 @@ __lt__(self, other): Compares objects for less than using the < operator.
 
 __enter__(self), __exit__(self, exc_type, exc_value, traceback): Used for context management using the with statement
 '''
+##Director
+'''
+In Python, decorators are a powerful concept used to modify or enhance the behavior of functions or methods. Decorators allow you to wrap a function with another function, adding some extra functionality to it without modifying the original function's code.
+'''
+
+def booster(car):
+    def boost():
+        print("Adding boost")
+        car()
+        print("Moving at top speed")
+    return boost
+class Car:
+    def car(self):
+        print("Boost initiated")
+supra = Car()
+
+@booster#decorator intialising
+def booster_car():
+    supra.car()
+
+booster_car()
+## decorators are used to add additional functions to a method using external functions

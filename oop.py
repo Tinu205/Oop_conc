@@ -193,5 +193,18 @@ supra = Car()
 def booster_car():
     supra.car()
 
-booster_car()
+# booster_car()
 ## decorators are used to add additional functions to a method using external functions
+
+### Exception handelling in oop
+class divide:
+    def __init__(self,first,second) -> None:
+        self.first = first
+        self.second = second
+    def divide(self):
+        try:
+            print(f"Divison is {self.first} and {self.second} is {self.first/self.second}")
+        except ZeroDivisionError:
+            print("Cannot divide by zero")
+give_zero = divide(1,0)
+# give_zero.divide()

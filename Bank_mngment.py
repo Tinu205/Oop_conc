@@ -34,6 +34,6 @@ root.deposit(500)
 print(root.get_balance())
 
 root.withdraw(1600)
-print(root.withdraw(120))
+# print(root.withdraw(120))
 
-print(root.get_trans)
+# print(root.get_trans)

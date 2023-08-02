@@ -37,3 +37,4 @@ root.withdraw(1600)
 # print(root.withdraw(120))
 
 # print(root.get_trans)
+#should redo the entire thing

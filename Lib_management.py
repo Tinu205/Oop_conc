@@ -72,3 +72,30 @@
 # TODO: Summarize project goals and how it demonstrates understanding of OOP concepts.
 
 # TODO: Conclude the project description with a thank you or final thoughts.
+
+class Library:
+    def __init__(self,name,location):
+        self.name = name
+        self.location = location
+        self.list_of_books  = []
+        self.list_of_patrons = []
+    
+    def add_book(self,book):
+        self.list_of_books.append(book)
+
+    def remove_book(self,book):
+        self.list_of_books.remove(book)
+
+    def add_patrons(self,patron):
+        self.list_of_patrons.append(patron)
+
+    def remove_patron(self,patron):
+        self.list_of_patrons.remove(patron)
+
+    def display_books(self):
+        for book in self.list_of_books:
+            print(book)
+        
+    def display_patron(self):
+        for patron in self.list_of_patrons:
+            print(patron)

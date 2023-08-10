@@ -99,3 +99,24 @@ class Library:
     def display_patron(self):
         for patron in self.list_of_patrons:
             print(patron)
+
+class Book:
+    def __init__(self,title,author,genre,isbn):
+        self.title = title
+        self.author = author
+        self.genre = genre
+        self.isbn = isbn
+        self.is_available = None
+
+    def mark_as_available(self):
+        self.is_available = True
+
+    def mark_as_unavailable(self):
+        self.is_available = False
+
+    def display_info(self):
+        print(f"Book name ->{self.title}\nAuthor ->{self.author}\nGenre -> {self.genre}\nISBN -> {self.isbn}")
+        if(self.is_available):
+            print("Available")
+        else:
+            print("Not available")

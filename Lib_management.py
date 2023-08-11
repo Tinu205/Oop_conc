@@ -120,3 +120,23 @@ class Book:
             print("Available")
         else:
             print("Not available")
+
+class Patron:
+    def __init__(self,name,contact_info):
+        self.name = name
+        self.contact_info = contact_info
+        self.membership_status = True
+
+    def update_contact_info(self,new_info):
+        self.contact_info = new_info
+
+    def update_membership_status(self,status):
+        self.membership_status = status
+    
+    def display_info(self):
+        print(f"Name -> {self.name}\nContact info -> {self.contact_info}")
+        if(self.membership_status):
+            print("Membership status: Is a member")
+        else:
+            print("Membership status: Not a member")
+    

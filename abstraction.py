@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
-
     @abstractmethod
     def make_sound(self):
-        pass
+        pass # no use but will be inherited in feature using method overridig
+
 class Dog(Animal):
 
     def make_sound(self):

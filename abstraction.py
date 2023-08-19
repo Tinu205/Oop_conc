@@ -15,6 +15,6 @@ class Cat(Animal):
         print("Meow, meow")
 
 tom = Cat()
-tom.make_sound()
+tom.make_sound()#prints meow
 spike = Dog()
 spike.make_sound()

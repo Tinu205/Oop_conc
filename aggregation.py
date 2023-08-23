@@ -1,3 +1,13 @@
+# Aggregation Example:
+# Aggregation is a concept in object-oriented programming where one class
+# contains instances of another class as its member variables. This allows
+# the containing class to manage and interact with multiple instances of the
+# contained class. In this code, the University class aggregates instances
+# of the Student class to represent a collection of students within the
+# university.
+#
+# Class definitions and methods follow below.
+
 # Define a class named "Student" to represent individual students
 class Student():
     def __init__(self, name, id):

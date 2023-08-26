@@ -18,7 +18,14 @@ class Book:
         self.name = name
         self.author = author
 
+# Create a Book instance
 rog = Book("Rog", "Annon")
+
+# Create a Library instance
 lct = Library("lct")
+
+# Add the Book instance to the Library's list of books
 lct.add_book(rog)
-lct.list_books()  # Print the names of books in the library
+
+# List the names of books in the library
+lct.list_books()

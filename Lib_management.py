@@ -139,4 +139,16 @@ class Patron:
             print("Membership status: Is a member")
         else:
             print("Membership status: Not a member")
-    
+
+class Transaction:
+    def __init__(self,books,patron,transaction_date):
+        self.books = books
+        self.patron = patron
+        self.transaction_date = transaction_date
+
+lict = Library("licet_lib","chennai")
+book1 = ("48 Laws of Power","Rober Greene","Phsycology","123456")
+customer1 = Patron("Tinu","+91-1111111111")
+lict.add_patrons(customer1)
+lict.add_book(book1)
+print(lict.list_of_books)
